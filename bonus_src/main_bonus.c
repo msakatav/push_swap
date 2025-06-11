@@ -6,7 +6,7 @@
 /*   By: msakata <msakata@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/04 23:48:03 by msakata           #+#    #+#             */
-/*   Updated: 2025/06/05 01:49:06 by msakata          ###   ########.fr       */
+/*   Updated: 2025/06/12 04:41:23 by msakata          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,10 +47,5 @@ int	main(int argc, char **argv)
 	if (!ft_malloc(&arr, num))
 		return (0);
 	ft_argv_to_ints(argv, arr, num);
-	if (ft_is_sorted(arr, num))
-	{
-		free(arr);
-		return (0);
-	}
 	ft_stack_bonus(arr, num);
 }
